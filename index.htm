@@ -13,7 +13,7 @@
 <canvas width="800" height="600" id="art"></canvas>
 <script type="text/javascript">
 	var iso = new Isomer(document.getElementById("art"));
-	
+	iso.setLightPosition(2,1,1);
 	var Shape = Isomer.Shape;
 	var Point = Isomer.Point;
 	var Color = Isomer.Color;
@@ -23,10 +23,13 @@
 	iso.add(Shape.Prism(Point.ORIGIN, 3, 3, 1));
 	iso.add(Shape.Pyramid(Point(0, 2, 1)), red);
 	iso.add(Shape.Prism(Point(2, 0, 1)), blue);
-	
-	while(true)
+
+	function gameLoop()
 	{
-		
+		while(true)
+		{
+
+		}
 	}
 </script>
 
